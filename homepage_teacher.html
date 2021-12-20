@@ -1,0 +1,214 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+
+    <title>Instituto de computação</title>
+    <style type="text/css" media="screen">
+      @import url("https://fedorapeople.org/userdefs/css/fedora.css");
+      @import url("https://fedorapeople.org/userdefs/css/style.css");
+      @import url("css/custom.css");
+
+      #head h1 a
+      {
+        display: block;
+        background: url('logo.png') 20px 50% no-repeat;
+        height: 73px;
+        width: 195px;
+        overflow: hidden;
+      }
+
+      #main-div 
+      {
+        width: 100%;
+        padding: 0px;
+        margin: 0px;
+
+        display: flex;
+        flex-direction: row;
+        
+      }
+
+      #personal-column
+      {
+        min-width: 20%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        border-left: 1px dashed black;
+        border-top: 1px dashed black;
+        background-color: lightgray;
+      }
+
+      #personal-info
+      {
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        
+        padding-left: 15px;
+      }
+
+      #text-column
+      {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+
+        padding-left: 10px;
+      }
+
+      #profile-picture
+      {
+        height: 150px;
+        width: 150px;
+
+        padding-top: 20px;
+        padding-bottom: 20px;
+      }
+
+      .bold-span
+      {
+        font-weight: bold;
+        color: dark-grey;
+        font-size: 115%;
+      }
+
+      .interest-list li
+      {
+        font-size: 115%;
+        padding-bottom: 10px;
+      }
+
+      @media screen and (min-width: 1030px) 
+      {
+        #personal-column
+        {
+          min-width: 40%;
+        }
+
+        #text-column 
+        {
+          max-width: 60%;
+        }
+      }
+
+      @media screen and (min-width: 1075px) 
+      {
+        #personal-column
+        {
+          min-width: 30%;
+        }
+
+        #text-column 
+        {
+          max-width: 70%;
+        }
+      }
+
+
+      @media screen and (min-width: 1720px) 
+      {
+        #personal-column
+        {
+          max-width: 15%;
+        }
+
+        #text-column 
+        {
+          min-width: 80%;
+        }
+      }
+
+    </style>
+  </head>
+  <body>
+    <div id="wrapper">
+      <div id="head">
+        <h1><a href="https://www.dcc.ufrj.br/">IC</a></h1>
+      </div>
+      <div id="sidebar">
+        <div class="nav">
+
+          <h2>Navigation</h2>
+          <ul>
+            <li><a href="http://roma.fedorapeople.org/">Home</a></li>
+            <li><a href="https://github.com/">Github</a></li>
+            <li><a href="https://www.linkedin.com/">Linkedin</a></li>
+            <li><a href="http://lattes.cnpq.br/">Curriculum Vitae (Lattes)</a></li>
+            <li><a href="http://scholar.google.com.br/">Google Scholar Citations</a></li>
+          </ul>
+
+          <h2>Publications</h2>
+          <ul>
+            <li><a href="https://www.gsb.stanford.edu/faculty-research/publications">Domestic robot</a></li>
+            <li><a href="https://www.hup.harvard.edu/">Fency mathematics to impress others</a></li>
+            <li><a href="https://mitpress.mit.edu/">Very hard physics that proves nothing</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="content">
+        <div id="main-div">
+          <div id="personal-column">
+            <img src="professor.png" id="profile-picture" />
+            <h3>Charles Xavier</h3>
+            <div id="personal-info">
+              <p> <span class="bold-span">Age</span>: 45 years</p>
+              <p> <span class="bold-span">Email</span>: xarles.chavier @ dcc.ufrj.br </p>
+              <p> <span class="bold-span">Department</span>: computer science </p>
+              <p> <span class="bold-span">Lecturer since</span>: 1998 </p>
+            </div>
+          </div>
+
+          <div id="text-column">
+            <h3>Short Bio</h3>
+            <p>
+              Charles Xavier is an associate professor at the Computer Science department - DCC - at Federal University of Rio de Janeiro - UFRJ. 
+              He has a degree in Computer Engineering from Harvard (2004); obtained her MSc (2007) and PhD degrees (2012) in Computer Science from the ESTÁCIO. 
+              He was a substitute professor at the Department of Applied Informatics of UFRJ and a post-doc researcher at the Department of Informatics of the Pontifical Catholic University of Rio de Janeiro - PUC-Rio. 
+              His main research interests are Robots, AI, Machine Learning and Deep Learning.
+            </p>
+
+            <div id="materials">
+              <h3>Courses</h3>
+              <ul class="interest-list">
+                <li>Artificial intelligence</li>
+                <li>Probability and Statistics</li>
+                <li>Stochastic Processes</li>
+              </ul>
+
+              <h3>Interesting Links</h3>
+
+              <ul class="interest-list">
+                <li><a href="http://www.dcc.ufrj.br/~valeriab/The_C_Prog_Lang.pdf">The C programming language</a></li>
+                <li><a href="https://ubuntu.com/tutorials/command-line-for-beginners#1-overview">Command line for beginners</a></li>
+                <li><a href="https://numpydoc.readthedocs.io/en/latest/format.html">Numpy documentation</a></li>
+              </ul>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div id="bottom">
+      <div id="footer">
+        <p class="disclaimer">
+          The DCC webpage is maintained and driven by the community and
+          sponsored by the government. This is a community maintained site. Gov is
+          not responsible for content.
+        </p>
+        <ul>
+          <li class="first">
+            <a href="https://acesso.gov.br/">Legal</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
